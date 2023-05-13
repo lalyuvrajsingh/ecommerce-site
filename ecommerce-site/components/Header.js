@@ -61,7 +61,7 @@ const Header = () => {
 
                 {/********************** Mobile Icon ************************/}
 
-                {mobileMenu && <MobileMenu ShowCatMenu = {ShowCatMenu} setShowCatMenu = {setShowCatMenu}/>}
+                {mobileMenu && <MobileMenu ShowCatMenu = {ShowCatMenu} setShowCatMenu = {setShowCatMenu} setMobileMenu = {setMobileMenu}/>}
 
 
 
