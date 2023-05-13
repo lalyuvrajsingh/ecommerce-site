@@ -9,7 +9,7 @@ export default function Home() {
     <>
 
 
-      <main className='text-3xl'>
+      <main className='text-3xl h-[2000px]'>
         Har Har Mahadev....!
       </main>
 

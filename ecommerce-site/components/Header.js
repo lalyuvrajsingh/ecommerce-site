@@ -15,6 +15,28 @@ const Header = () => {
     const [Show, setShow] = useState("translate-y-0");
     const [LastScrollY, setLastScrollY] = useState(0);
 
+
+    const controlNavbar = () => {
+            if (window.scrollY > 200){
+                if(window.scrollY < LastScrollY){
+                    setShow("-translate-y-[80px]")
+                }else{
+                    setShow('shadow-sm')
+                }
+                
+            }else{
+                setShow("translate-y-0")
+            }
+            setLastScrollY(window.screenY)
+        }
+
+        useEffect(() => {
+            window.addEventListener("scroll", controlNavbar)
+            return () => {
+                window.removeEventListener("scroll", controlNavbar)
+            };
+        }, [LastScrollY]);
+
     return (
         <header className={`w-full h-[50px] md:h-[80px] bg-black/[0.9] flex items-center justify-between z-20 sticky top-0 transition-transform duration-300 ${Show} `}>
         

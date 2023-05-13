@@ -18,6 +18,9 @@ const MobileMenu = ({ShowCatMenu, setShowCatMenu, setMobileMenu}) => {
         ];
 
 
+
+
+
     return (
         <div className='flex flex-col md:hidden font-bold absolute top-[50px] left-0
         w-full h-[calc(100vh-50px)] border-t list-none'>
