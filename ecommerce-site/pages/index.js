@@ -19,7 +19,9 @@ export default function Home() {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium natus recusandae sunt dolor aliquid unde, enim voluptate aliquam dolores delectus?</p>
           </div>
         </Wrapper>
-        
+
+
+        {/************************* Product Grid *********************************/}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-5 my-14 mx-auto md:px-0 ">
           <ProductCard/>
           <ProductCard/>
@@ -29,7 +31,9 @@ export default function Home() {
           <ProductCard/>
           <ProductCard/>
           <ProductCard/>
+          <ProductCard/>
         </div>
+        {/************************* Product Grid *********************************/}
         
       </main>
 
