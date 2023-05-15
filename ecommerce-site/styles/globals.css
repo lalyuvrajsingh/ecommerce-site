@@ -30,6 +30,7 @@ color: white;
 .productCarousel.carousel-root {
 display: flex;
 flex-direction: row-reverse;
+
 gap: 15px;
 }
 .productCarousel.carousel-root .carousel {
