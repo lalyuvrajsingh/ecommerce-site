@@ -19,7 +19,7 @@ const Menu = ({ShowCatMenu, setShowCatMenu}) => {
 
 
     return (
-        <div className='hidden md:flex items-center gap-8 font-medium text-white list-none'>
+        <div className='hidden md:flex items-center gap-8 font-medium  list-none'>
         {data.map((item)=>{
             return (
             <React.Fragment key={item.id}>

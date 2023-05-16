@@ -43,48 +43,48 @@ const ProductDetails = () => {
                         </div>
                         
                         <div className="grid grid-cols-3 text-sm gap-2"> 
-                        <div className="border text-sm border-white/[0.5] bg-white/[0.1] rounded-lg text-center  py-3
-                        font-medium hover:border-white cursor-pointer">
+                        <div className="border text-sm border-black/[0.5] bg-white/[0.1] rounded-lg text-center  py-3
+                        font-medium hover:bg-black/[0.1] cursor-pointer">
                             UK 6
                             
                         </div>
-                        <div className="border text-sm border-white/[0.5] bg-white/[0.1] rounded-lg text-center  py-3
-                        font-medium hover:border-white cursor-pointer">
+                        <div className="border text-sm border-black/[0.5] bg-white/[0.1] rounded-lg text-center  py-3
+                        font-medium hover:bg-black/[0.1] cursor-pointer">
                             UK 6
                             
                         </div>
-                        <div className="border text-sm border-white/[0.5] bg-white/[0.1] rounded-lg text-center  py-3
-                        font-medium hover:border-white cursor-pointer">
+                        <div className="border text-sm border-black/[0.5] bg-white/[0.1] rounded-lg text-center  py-3
+                        font-medium hover:bg-black/[0.1] cursor-pointer">
                             UK 6
                             
                         </div>
-                        <div className="border text-sm border-white/[0.5] bg-white/[0.1] rounded-lg text-center  py-3
-                        font-medium hover:border-white cursor-pointer">
+                        <div className="border text-sm border-black/[0.5] bg-white/[0.1] rounded-lg text-center  py-3
+                        font-medium hover:bg-black/[0.1] cursor-pointer">
                             UK 6
                             
                         </div>
-                        <div className="border text-sm border-white/[0.5] bg-white/[0.1] rounded-lg text-center  py-3
-                        font-medium hover:border-white cursor-pointer">
+                        <div className="border text-sm border-black/[0.5] bg-white/[0.1] rounded-lg text-center  py-3
+                        font-medium hover:bg-black/[0.1] cursor-pointer">
                             UK 6
                             
                         </div>
-                        <div className="border text-sm border-white/[0.5] bg-white/[0.1] rounded-lg text-center  py-3
-                        font-medium hover:border-white cursor-pointer">
+                        <div className="border text-sm border-black/[0.5] bg-white/[0.1] rounded-lg text-center  py-3
+                        font-medium hover:bg-black/[0.1] cursor-pointer">
                             UK 6
                             
                         </div>
-                        <div className="border text-sm border-white/[0.5] bg-white/[0.1] rounded-lg text-center  py-3
-                        font-medium hover:border-white cursor-pointer">
+                        <div className="border text-sm border-black/[0.5] bg-white/[0.1] rounded-lg text-center  py-3
+                        font-medium hover:bg-black/[0.1] cursor-pointer">
                             UK 6
                             
                         </div>
-                        <div className="border text-sm border-white/[0.5] bg-white/[0.1] rounded-lg text-center  py-3
-                        font-medium hover:border-white cursor-pointer">
+                        <div className="border text-sm border-black/[0.5] bg-white/[0.1] rounded-lg text-center  py-3
+                        font-medium hover:bg-black/[0.1] cursor-pointer">
                             UK 6
                             
                         </div>
-                        <div className="border text-sm border-white/[0.5] bg-white/[0.1] rounded-lg text-center  py-3
-                        font-medium hover:border-white cursor-pointer">
+                        <div className="border text-sm border-black/[0.5] bg-white/[0.1] rounded-lg text-center  py-3
+                        font-medium hover:bg-black/[0.1] cursor-pointer">
                             UK 6
                             
                         </div>
@@ -94,14 +94,14 @@ const ProductDetails = () => {
                                 Size selection is required
                             </div>
 
-                    <button className="w-full py-4 rounded-full mt-4 bg-white text-black Obg-black text-lg font-medium transition-transform active: scale-95 mb-3
+                    <button className="w-full py-4 rounded-full mt-4 bg-black text-white Obg-black text-lg font-medium transition-transform active: scale-95 mb-3
                     hover:opacity-75">
                     Add to Cart
                     </button>
 
-                    <button className="w-full py-4 rounded-full border  bg-black Obg-black text-lg font-medium transition-transform active: scale-95 mb-3
+                    <button className="w-full py-4 rounded-full border Obg-black text-lg font-medium transition-transform  active: scale-95 mb-3
                     hover:opacity-75">
-                    Add to Cart
+                    Buy Now
                     </button>
 
                     <div>

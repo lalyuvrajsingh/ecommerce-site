@@ -4,7 +4,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 const ProductDetailsCarousel = () => {
     return (
-        <div className='text-white text-[20px] w-full max-w-[1360px] max-auto sticky top-[50px]'>
+        <div className='text-white text-[20px] w-full  max-w-[1360px] max-auto sticky top-[50px]'>
             <Carousel 
             autoPlay={true}
             infiniteLoop={true}
@@ -14,7 +14,7 @@ const ProductDetailsCarousel = () => {
             showThumbs={true}
             showIndicators={false}
             className='productCarousel'>
-            <img src="/assets/p1.png" alt="" />
+            <img src="/assets/p1.png" className='shadow-lg' alt="" />
             <img src="/assets/p2.png" alt="" />
             <img src="/assets/p3.png" alt="" />
             <img src="/assets/p4.png" alt="" />

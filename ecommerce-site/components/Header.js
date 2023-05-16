@@ -21,7 +21,7 @@ const Header = () => {
                 if(window.scrollY < LastScrollY){
                     setShow("-translate-y-[80px]")
                 }else{
-                    setShow('shadow-sm shadow-white/[0.5]')
+                    setShow('shadow-xl')
                 }
                 
             }else{
@@ -38,12 +38,12 @@ const Header = () => {
         }, [LastScrollY]);
 
     return (
-        <header className={`w-full h-[50px] md:h-[80px]] border-b border-white/[0.2] flex items-center justify-between z-20 sticky top-0 transition-transform duration-300 ${Show} `}>
+        <header className={`w-full h-[60px] md:h-[80px]] border-b shadow-sm border-black/[0.1] bg-white flex items-center justify-between z-20 sticky top-0 transition-transform duration-300 ${Show} `}>
         
         <Wrapper className='h-[60px] flex justify-between items-center'>
 
             <Link href={'/'}>
-                <h1 className='text-xl'>Lal Yuvraj Singh</h1>
+                <h1 className='text-xl'><span className='text-red-600'>E</span>-Commerce App</h1>
             </Link>
 
             <Menu ShowCatMenu = {ShowCatMenu} setShowCatMenu = {setShowCatMenu}/>
