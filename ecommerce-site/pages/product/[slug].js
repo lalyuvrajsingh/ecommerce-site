@@ -1,6 +1,7 @@
 import React from 'react';
 import Wrapper from '@/components/Wrapper';
 import ProductDetailsCarousel from '@/components/ProductDetailsCarousel';
+import RelatedProducts from '@/components/RelatedProducts';
 
 const ProductDetails = () => {
     return (
@@ -132,10 +133,10 @@ const ProductDetails = () => {
                     </div>
 
                     </div>
-
-
-
                 </div>
+
+                <RelatedProducts/>
+
             </Wrapper>
         </div>
     );

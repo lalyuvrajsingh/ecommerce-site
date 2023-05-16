@@ -59,12 +59,16 @@ const Header = () => {
                     items-center px-[2px] md:px-[5px]'>51</div>
                 </div>
 
-                <div className="w-8 md:-12 h-8 md:h-12 rounded-full justify-center flex  items-center  cursor-pointer relative">
-                    <BsCart className='text-[15px] md:text-[18px] '/>
-                    <div className='h-[14px] md:h-[20px] min-w-[14px] md:min-w-[18px]
-                    rounded-full bg-red-600 absolute top-1 left-5 md:left-5 text-white text-[10px] md:text-[12px] flex justify-center
-                    items-center px-[2px] md:px-[5px]'>5</div>
-                </div>
+                <Link href='/cart'>
+                    <div className="w-8 md:-12 h-8 md:h-12 rounded-full justify-center flex  items-center  cursor-pointer relative">
+                        <BsCart className='text-[15px] md:text-[18px] '/>
+                        <div className='h-[14px] md:h-[20px] min-w-[14px] md:min-w-[18px]
+                        rounded-full bg-red-600 absolute top-1 left-5 md:left-5 text-white text-[10px] md:text-[12px] flex justify-center
+                        items-center px-[2px] md:px-[5px]'>5</div>
+                    </div>
+                </Link>
+
+                
 
                 {/********************** cart & heart Icon ************************/}
 
@@ -72,7 +76,7 @@ const Header = () => {
 
                 {/********************** Mobile Icon ************************/}
 
-                <div className="w-8 md:-12 h-8 md:h-12 rounded-full justify-center flex  items-center  cursor-pointer relative">
+                <div className="w-8 md:-12 h-8  md:h-12 rounded-full justify-center flex md:hidden  items-center  cursor-pointer relative">
                     {mobileMenu ? (
                         <VscChromeClose className='text-[16px]' onClick={()=>{setMobileMenu(false)}}/>
                     ):(
