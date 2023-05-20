@@ -28,18 +28,8 @@ export default function Home({products}) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-5 my-14 mx-auto md:px-0 ">
 
         {products.data.map((product)=>(
-          <ProductCard key={product.id} data={product}/>
+          <ProductCard key={product?.id} data={product} />
         ))}
-        
-          <ProductCard/>
-          <ProductCard/>
-          <ProductCard/>
-          <ProductCard/>
-          <ProductCard/>
-          <ProductCard/>
-          <ProductCard/>
-          <ProductCard/>
-          <ProductCard/>
         </div>
         {/************************* Product Grid *********************************/}
         
