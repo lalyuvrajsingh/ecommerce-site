@@ -7,6 +7,7 @@ import { BsCart } from "react-icons/bs";
 import { BiMenuAltRight } from "react-icons/bi";
 import { VscChromeClose } from "react-icons/vsc";
 import MobileMenu from './MobileMenu';
+import { fetchDataFromAPI } from '@/utils/api';
 
 const Header = () => {
 
@@ -14,6 +15,7 @@ const Header = () => {
     const [ShowCatMenu, setShowCatMenu] = useState(false);
     const [Show, setShow] = useState("translate-y-0");
     const [LastScrollY, setLastScrollY] = useState(0);
+    const [categories, setCategories] = useState(null);
 
 
     const controlNavbar = () => {
@@ -37,6 +39,15 @@ const Header = () => {
             };
         }, [LastScrollY]);
 
+        useEffect(() => {
+            fetchCategories()
+        }, []);
+
+        const fetchCategories = async () => {
+            const {data} = fetchDataFromAPI('/api/categories?populate=*')
+            setCategories(data)
+        }
+
     return (
         <header className={`w-full h-[60px] md:h-[80px]] border-b shadow-sm border-black/[0.1] bg-white flex items-center justify-between z-20 sticky top-0 transition-transform duration-300 ${Show} `}>
         
@@ -46,7 +57,11 @@ const Header = () => {
                 <h1 className='text-xl'><span className='text-red-600'>E</span>-Commerce App</h1>
             </Link>
 
-            <Menu ShowCatMenu = {ShowCatMenu} setShowCatMenu = {setShowCatMenu}/>
+            <Menu 
+            ShowCatMenu = {ShowCatMenu} 
+            setShowCatMenu = {setShowCatMenu}
+            categories = {categories}
+            />
 
             <div className='flex items-center gap-2 '>
 
@@ -87,7 +102,12 @@ const Header = () => {
 
                 {/********************** Mobile Icon ************************/}
 
-                {mobileMenu && <MobileMenu ShowCatMenu = {ShowCatMenu} setShowCatMenu = {setShowCatMenu} setMobileMenu = {setMobileMenu}/>}
+                {mobileMenu && <MobileMenu 
+                ShowCatMenu = {ShowCatMenu} 
+                setShowCatMenu = {setShowCatMenu} 
+                setMobileMenu = {setMobileMenu}
+                categories = {categories}
+                />}
 
 
 

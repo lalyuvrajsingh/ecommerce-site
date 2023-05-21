@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import {BsChevronDown} from  'react-icons/bs'
 
-const Menu = ({ShowCatMenu, setShowCatMenu}) => {
+const Menu = ({ShowCatMenu, setShowCatMenu, categories}) => {
 
     const data = [
         { id: 1, name: "Home", url: "/" },
@@ -16,6 +16,8 @@ const Menu = ({ShowCatMenu, setShowCatMenu}) => {
         { id: 3, name: "Running shoes", doc_count: 64 },
         { id: 4, name: "Football shoes", doc_count: 107 },
         ];
+
+        
 
 
     return (
@@ -32,14 +34,16 @@ const Menu = ({ShowCatMenu, setShowCatMenu}) => {
 
                         {ShowCatMenu && (
                             <ul className='bg-black absolute top-6 left-0
-                            min-w-[250px] px-1 py-1 rounded-xl text-white shadow-white shadow-lg'>{subMenuData.map((subMenu)=>{
+                            min-w-[250px] px-1 py-1 rounded-xl text-white shadow-white shadow-lg'>{categories?.map(({data})=>{
+
+
                                 return (
-                                    <Link key={subMenu.id} href={`/category/${subMenu.name}`} onClick={()=>{setShowCatMenu(false)}} >
+                                    <Link key={data.id} href={`/category/${attributes?.slug}`} onClick={()=>{setShowCatMenu(false)}}>
                                         <li className='h-12 flex justify-between
                                         items-center px-3 hover:bg-white/[0.1]
                                         rounded-md border-1 border-gray-50'>
-                                        {subMenu.name}
-                                        <span className='opacity-50 text-sm'>{`(${subMenu.doc_count})`}</span>
+                                        {data?.attributes?.name}
+                                        <span className='opacity-50 text-sm'>{`($)`}</span>
                                         </li>
 
                                         
